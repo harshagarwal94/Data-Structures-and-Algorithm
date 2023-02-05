@@ -146,6 +146,56 @@ ans: step1: statement;
       Apply log both the side
              then log(n)=====complexity=O(log n)
     log base is 5
+    
+@.6 for(i=0;i<n;i++)//n
+for(j=0;j<n;j++)//n
+ {
+   statement;
+
+ }
+solution n*n;
+
+@.7 for(i=0;i<n;i++)//n 
+    for(j=n;j>=1;j=j/2)// logn
+    {
+     statement;
+
+    }
+ ans : n*logn
+@.8 for(i=0;i<n;i++)n
+    for(j=0;j<n;j++)n
+    for(k=0;k<n;k++)n
+      {
+       statement;
+     }
+ans;n^3
+
+@.9 for(i=0;i<n;i++)//n
+    for(j=0;j<n;j++)//n
+    for(k=n;k>=1;k=k/2) logn
+     {
+      statement;
+     }
+
+ans : (n^2)(log n)
+
+Big O
+.................................
+Suppose if the complexity is n:
+ 1. O(n), O(n^2), O(n^3)//// Big O
+...................................
+2. Theta(n), Theta(n), Theta(n)
+...................................
+3. Omega(n), Omega(log n), Omega(log log n)
+
+
+
+
+
+
+
+
+
 ```
 
 

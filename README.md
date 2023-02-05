@@ -58,8 +58,95 @@ Articulation Point - Shortest-path algorithms (Dijkstra’s and Floyd’s algori
 Kruskal’s algorithms).
 
 
+## How to calculate the time complexity
+
+```
+Step1: Initially u have to calculate the number of executable steps.
+Step2: Represents in the form notations(Big O, Omega, Theta).
+
+................................................................
+Q.1 for(i=0;i<n;i++)
+{
+ printf("Today i am in bad mood");//executalbe statement
+}
+.................................................
+Ans
+step1. printf("Today i am in bad mood");//executable statement
+Step 2. 0 to n-1= n // no. of times
+Step 3. O(n)// Big O(n)
+..................................................
+Q.2 for(i=0;i<n/2;i++)
+{
+ printf("Today i am in good mood");
+}
+......................................................
+Ans step1. printf("Today i am in good mood");// executable statement
+Step 2. 0 to n/2-1= n/2 // no. of times
+Step 3. O(n/2)= O(n) //neglecting the constant terms
+.....................................................
+Q.3 for(i=0;i<n;i++)// n
+     for(j=0;j<n;j++)// n
+       {
+      printf("Today i am in bad mood"); //executable statement
+       }
+...................................................
+Ans 
+ Step1: printf("Today i am in bad mood");
+ Step2: i=0, j=n;
+        i=1, j=n;
+        i=2, j=n;
 
 
+       i=n-1, j=n;
+summation of all j's= (n+n+n+n.........+n)=n * (1+1+1+1.....)= n*n=n^2= O(n^2);
+.................................................................................
+Q.4 for(i=n;i>=1;n=n/2)
+      {
+       statement;
+     }
+ans: step1: statement;
+     step2: i=n;
+            i=n/2;
+            i=n/4;
+	    i=n/8;
+   .........i=n/n=1
+     generalized way: n/(2^k)=1
+                    n=(2^k)
+      Apply log both the side
+             then log(n)=====complexity=O(log n)
+...........................................................................
+Q.5 for(i=n;i>=1;n=n/3)
+      {
+       statement;
+     }
+ans: step1: statement;
+     step2: i=n;
+            i=n/3;
+            i=n/9;
+	    i=n/27;
+   .........i=n/n=1
+     generalized way: n/(3^k)=1
+                    n=(3^k)
+      Apply log both the side
+             then log(n)=====complexity=O(log n)
+    log base is 3
+........................................................................
+Q.5 for(i=n;i>=1;n=n/5)
+      {
+       statement;
+     }
+ans: step1: statement;
+     step2: i=n;
+            i=n/5;
+            i=n/25;
+	    i=n/125;
+   .........i=n/n=1
+     generalized way: n/(5^k)=1
+                    n=(5^k)
+      Apply log both the side
+             then log(n)=====complexity=O(log n)
+    log base is 5
+```
 
 
 

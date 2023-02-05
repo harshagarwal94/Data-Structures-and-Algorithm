@@ -197,8 +197,57 @@ Suppose if the complexity is n:
 
 
 ```
+### Sorting and Searching
 
+```
+Unit-2: Sorting and Searching
+Sorting: Arrange of data in order (Asc or Desc).
+Searching: Finding element in a available data.
+..........................................
+Sorting: 
+Part 1:
+1. Bubble Sort
+2. Insertion Sort
+3. Selection Sort
+Part 2:
+1. Quick Sort
+2. Merge Sort
+................................................
+Bubble Sort:
+Objective: Arrangment of numbers
+first iteration 
+suppose array size is n: 0 to n-1;
+place largest number at the end (n-1);
+second iteration
+array size is n: 0 to n-2;
+place secon largest number at the (n-2);
+third iteration
+arrayt size is n: 0 to n-3;
+third largest element searched and placed at (n-3)index
+............................................................
+#include<stdio.h>
+void main()
+{
+int a[]={24, 16, 96, 1,14};
+int n=sizeof(a)/sizeof(a[0]);
+BubbleSort(a, n);
+}
+void BubbleSort(int a[], int n)
+{
+int i,j;
+for(i=0;i<n-1;i++)// number of iteration
+for(j=0;j<n-1-i, j++)
+    {
+       if(a[j]>a[j+1]){swap(&a[j], &a[j+1]);}
+  }
 
+}
+void swap(int *a, int *b)
+{
+temp=*a; *a=*b; *b=temp;
+}
+
+```
 
 
 

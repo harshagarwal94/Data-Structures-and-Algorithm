@@ -271,4 +271,4 @@ temp=*a; *a=*b; *b=temp;
 #Disclaimer 
 
 * For Educational Purpose only 
-* MIT Licensed
+* Open Source Licensed
